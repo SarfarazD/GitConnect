@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Extent Parallel Test]" parallel="classes">
+  <test name="ExtentWithParallelClasses(failed)" parallel="classes">
+    <classes>
+      <class name="home.Link.TestCase1">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterEachTest"/>
+        </methods>
+      </class> <!-- home.Link.TestCase1 -->
+      <class name="home.Link.TestCase2">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterEachTest2"/>
+          <include name="Test2"/>
+        </methods>
+      </class> <!-- home.Link.TestCase2 -->
+    </classes>
+  </test> <!-- ExtentWithParallelClasses(failed) -->
+</suite> <!-- Failed suite [Extent Parallel Test] -->

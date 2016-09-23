@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [CTtransit Automation Suite]" parallel="classes">
+  <parameter name="os" value="windows 7"/>
+  <parameter name="environment" value="local"/>
+  <parameter name="browser" value="firefox"/>
+  <test name="CTtransit Automation Run on Firefox(failed)" parallel="classes">
+    <classes>
+      <class name="feedbackForm.FeedBackFormTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="setUp"/>
+          <include name="afterEachTest2"/>
+          <include name="FeedbackCheck" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- feedbackForm.FeedBackFormTest -->
+      <class name="tripPlanner.TripPlannerTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tripPlanner.TripPlannerTest -->
+    </classes>
+  </test> <!-- CTtransit Automation Run on Firefox(failed) -->
+</suite> <!-- Failed suite [CTtransit Automation Suite] -->
