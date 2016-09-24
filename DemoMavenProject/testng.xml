@@ -9,7 +9,7 @@
 <!-- <suite name="CTtransit Automation Suite" > -->
 
 	<parameter name="environment" value="local"/>
-	<parameter name="browser" value="firefox"/>
+	<parameter name="browser" value="chrome"/>
 	<parameter name="os" value="windows 7"/>
 	
 	<test name="CTtransit Automation Run on Firefox"> 
@@ -17,7 +17,7 @@
 	        
 	        
 	       	
-	          <class name="tripPlanner.TripPlanner_Device"/>
+	          <class name="basicScripts.BasicTest"/>
 	         
 	          
 	       
