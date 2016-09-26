@@ -71,5 +71,6 @@ public class BasicTest extends ReportMain {
 		driver.manage().window().maximize();
 		driver.get("http://google.com");
 		driver.findElement(By.id("gs_htif0")).sendKeys("Software");
+		System.out.println("Done");
 	}
 }
