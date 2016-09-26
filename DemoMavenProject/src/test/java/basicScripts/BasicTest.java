@@ -1,5 +1,6 @@
 package basicScripts;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -69,5 +70,6 @@ public class BasicTest extends ReportMain {
 		
 		driver.manage().window().maximize();
 		driver.get("http://google.com");
+		driver.findElement(By.id("gs_htif0")).sendKeys("Software");
 	}
 }
