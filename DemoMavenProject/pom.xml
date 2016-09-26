@@ -107,7 +107,7 @@
 				        	<configuration>
 
 								<suiteXmlFiles>
-									<suiteXmlFile>src/test/resources/TestNG.xml</suiteXmlFile>
+									<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
 								</suiteXmlFiles>
 						
 	            				<properties>	            

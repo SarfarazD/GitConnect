@@ -2,10 +2,12 @@ package factory.Report;
 
 import java.io.File;
 
-import org.aspectj.util.FileUtil;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
+import com.sun.jna.platform.FileUtils;
  
 public class Utility 
 {
@@ -18,7 +20,7 @@ TakesScreenshot ts=(TakesScreenshot)driver;
  
 File source=ts.getScreenshotAs(OutputType.FILE);
  
-FileUtil.copyFile(source, new File("./Screenshots/"+screenshotName+".jpg"));
+org.apache.commons.io.FileUtils.copyFile(source, new File("./Screenshots/"+screenshotName+".jpg"));
  
 System.out.println("Screenshot taken");
 } 
