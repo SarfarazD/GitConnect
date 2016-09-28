@@ -34,7 +34,7 @@ public class BasicTest extends ReportMain {
 	{		
 		driver= b.setUp(browser, environment, OS);
 		
-	}
+	}    
 
 	@AfterMethod
 	public void tearDown(ITestResult result) 
