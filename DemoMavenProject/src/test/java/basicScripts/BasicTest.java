@@ -14,9 +14,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import factory.Report.ReportMain;
 import factory.Report.Utility;
 import utility.Browser;
-import utility.Constants;
 import utility.JavaHelpers;
-import utility.SeleniumFunctions;
 
 
 
@@ -53,6 +51,7 @@ public class BasicTest extends ReportMain {
 	extent.flush();
 	 
 	driver.get("D:\\Report\\CTtransit_Test_Execution_Report.html");
+	driver.close();
 	}
 
 	/* Test 1: 
