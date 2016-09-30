@@ -2,6 +2,7 @@ package basicScripts;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -20,6 +21,8 @@ import utility.JavaHelpers;
 
 public class BasicTest extends ReportMain {
 	
+	WebDriver driver;
+	/*
 	private WebDriver driver;
 	private Browser b = new Browser();
 	JavaHelpers JH = new JavaHelpers();
@@ -60,19 +63,22 @@ public class BasicTest extends ReportMain {
 	@Test
 	private void Test() throws Exception
 	{
-		test = extent.startTest("Verify User is able to search the trip!!");	
+		//test = extent.startTest("Verify User is able to search the trip!!");	
 		
 		//SeleniumFunctions SeleniumFunc = new SeleniumFunctions(driver);
 	
 		//SeleniumFunc.ToGoToUrl(Constants.ApplicationURL);
-		
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/BrowserDrivers/chromedriver.exe");
+		   driver = new ChromeDriver();
+		//WebDriver driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
 		driver.get("http://google.com");
-		driver.findElement(By.id("gs_htif0")).sendKeys("Software");
+		//driver.findElement(By.id("gs_htif0")).sendKeys("Software");
 		System.out.println("Done 123");
 		System.out.println("1211112121213234242a3");
 		System.out.println("Testing Jenkins CI.....");
 		System.out.println("2 Testing Jenkins CI.....klklkaal");
+		driver.close();
 	}
 }

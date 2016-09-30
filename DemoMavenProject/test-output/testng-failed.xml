@@ -9,8 +9,6 @@
       <class name="basicScripts.BasicTest">
         <methods>
           <include name="beforeClass"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
           <include name="Test"/>
         </methods>
       </class> <!-- basicScripts.BasicTest -->
