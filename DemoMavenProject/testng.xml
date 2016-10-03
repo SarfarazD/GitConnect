@@ -6,7 +6,7 @@
 <!--  @Parameter - 'os' cab be - "windows 7" -->
 
 <suite name="Demo Automation Suite" parallel="classes" thread-count="1" >
-<!-- <suite name="CTtransit Automation Suite" > -->
+<!-- <suite name="Demo Automation Suite" > -->
 
 	<parameter name="environment" value="local"/>
 	<parameter name="browser" value="chrome"/>

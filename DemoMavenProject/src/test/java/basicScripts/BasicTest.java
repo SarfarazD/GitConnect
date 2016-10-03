@@ -73,12 +73,9 @@ public class BasicTest extends ReportMain {
 		//WebDriver driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
-		driver.get("http://google.com");
-		//driver.findElement(By.id("gs_htif0")).sendKeys("Software");
-		System.out.println("Done 123");
-		System.out.println("1211112121213234242a3");
-		System.out.println("Testing Jenkins CI.....");
-		System.out.println("2 Testing Jenkins CI.....klklkaaaal");
+		driver.get("http://clarionwebsiteqa.com/");
+
+		System.out.println("-----Automatic Buid Execution is Done when user commit and push the code in GitHub------");
 		driver.close();
 	}
 }
