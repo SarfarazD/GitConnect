@@ -17,12 +17,12 @@ import factory.Report.ReportMain;
 import factory.Report.Utility;
 import utility.Browser;
 import utility.JavaHelpers;
-
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;	
 
 
 public class BasicTest extends ReportMain {
 	
-	WebDriver driver;
+	//WebDriver driver;
 	/*
 	private WebDriver driver;
 	private Browser b = new Browser();
@@ -70,7 +70,7 @@ public class BasicTest extends ReportMain {
 	
 		//SeleniumFunc.ToGoToUrl(Constants.ApplicationURL);
 		//System.setProperty("webdriver.chrome.driver", "src/test/resources/BrowserDrivers/chromedriver.exe");
-		   driver = new FirefoxDriver();
+		 WebDriver driver = new HtmlUnitDriver();
 		//WebDriver driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
