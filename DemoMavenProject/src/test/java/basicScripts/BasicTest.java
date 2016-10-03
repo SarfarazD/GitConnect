@@ -3,6 +3,7 @@ package basicScripts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -68,8 +69,8 @@ public class BasicTest extends ReportMain {
 		//SeleniumFunctions SeleniumFunc = new SeleniumFunctions(driver);
 	
 		//SeleniumFunc.ToGoToUrl(Constants.ApplicationURL);
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/BrowserDrivers/chromedriver.exe");
-		   driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "src/test/resources/BrowserDrivers/chromedriver.exe");
+		   driver = new FirefoxDriver();
 		//WebDriver driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
