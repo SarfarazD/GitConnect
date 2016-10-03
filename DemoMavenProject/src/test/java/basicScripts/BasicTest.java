@@ -75,7 +75,7 @@ public class BasicTest extends ReportMain {
 		driver.manage().window().maximize();
 		driver.get("http://clarionwebsiteqa.com/");
 
-		System.out.println("-----Automatic Buid Execution is Done when user commit and push the code in GitHub------");
+		System.out.println("-----Automatic Buid Execution is Done when user commit and push the code in GitHub  sfsdfsd------");
 		driver.close();
 	}
 }
