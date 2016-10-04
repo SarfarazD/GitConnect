@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tripPlanner.TripPlannerTest">
+      <class name="basicScripts.BasicTest">
         <methods>
           <include name="beforeClass"/>
-          <include name="verifyTripPlannervalidCheck"/>
-          <include name="FeedbackCheck"/>
+          <include name="Test"/>
         </methods>
-      </class> <!-- tripPlanner.TripPlannerTest -->
+      </class> <!-- basicScripts.BasicTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
